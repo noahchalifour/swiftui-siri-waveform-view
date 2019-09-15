@@ -15,10 +15,10 @@ struct ContentView: View {
 
     func randomize() {
 
-        randomizeTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true, block: { _ in
+        randomizeTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { _ in
 
             let randomPower = Double.random(in: 0 ... 1.0)
-            self.power = randomPower
+            self.power = self.power == 0.0 ? randomPower : 0.0
 
         })
 
