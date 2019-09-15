@@ -14,7 +14,11 @@ struct SiriWaveView: View {
     var colors: [Color]!
     var supportLineColor: Color!
     
-    init() {
+    var power: Double!
+    
+    init(power: Double) {
+        
+        self.power = power
         
         // Initialize default Siri waveform
         
@@ -30,7 +34,7 @@ struct SiriWaveView: View {
         self.supportLineColor = Color(.white)
         
         // Initialize model
-        self.siriWave = SiriWave(numWaves: self.colors.count)
+        self.siriWave = SiriWave(numWaves: self.colors.count, power: power)
         
     }
     
@@ -42,6 +46,8 @@ struct SiriWaveView: View {
                 SupportLine(color: self.supportLineColor)
                 ForEach(0..<self.colors.count, id: \.self) { i in
                     WaveView(wave: self.siriWave.waves[i], color: self.colors[i])
+//                        .scaleEffect(CGFloat(self.power))
+                        .animation(.spring())
                 }
                 
             }
@@ -56,6 +62,6 @@ struct SiriWaveView: View {
 
 struct SiriWaveView_Previews: PreviewProvider {
     static var previews: some View {
-        SiriWaveView()
+        SiriWaveView(power: 0.0)
     }
 }

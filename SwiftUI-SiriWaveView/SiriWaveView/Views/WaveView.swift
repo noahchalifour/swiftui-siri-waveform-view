@@ -24,9 +24,9 @@ private struct WaveGeometry {
         
         var coordinates = [[Double]](repeating: [0.0, 0.0], count: xPoints.count)
         
-        for i in 0..<self.wave.numCurves {
+        for i in 0..<self.wave.useCurves {
             
-            let A = self.wave.A[i] * Double(rect.midY)
+            let A = self.wave.curves[i].A * Double(rect.midY) * self.wave.power
             
             var j = 0
             
@@ -35,7 +35,7 @@ private struct WaveGeometry {
                 let graphScaledX = graphX / (rect.midX / 9.0)
                 
                 let x = rect.midX + graphX
-                let y = self.attn(x: Double(graphScaledX), A: A, k: self.wave.k[i], t: self.wave.t[i]) + Double(self.origin.y)
+                let y = self.attn(x: Double(graphScaledX), A: A, k: self.wave.curves[i].k, t: self.wave.curves[i].t) + Double(self.origin.y)
                 
                 coordinates[j] = [Double(x), max(coordinates[j][1], y)]
                 
@@ -92,12 +92,17 @@ struct WaveShape: Shape {
         
     }
     
-//    var animatableData: SiriWave.Wave.AnimatableData {
-//
-//        get { return wave.animatableData }
-//        set { wave.animatableData = newValue }
-//
-//    }
+    var animatableData: SiriWave.Wave.AnimatableData {
+        
+        get {
+            return wave.animatableData
+        }
+        
+        set {
+            wave.animatableData = newValue
+        }
+
+    }
     
 }
 
@@ -117,6 +122,6 @@ struct WaveView: View {
 
 struct WaveView_Previews: PreviewProvider {
     static var previews: some View {
-        WaveView(wave: .random(withPower: 1.0), color: Color(.red))
+        WaveView(wave: .random(withPower: 1), color: Color(.red))
     }
 }
