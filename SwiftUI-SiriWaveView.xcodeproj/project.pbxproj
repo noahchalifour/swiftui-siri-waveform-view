@@ -11,38 +11,23 @@
 		B211A501232D7F2D00485C1B /* SiriWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = B211A500232D7F2D00485C1B /* SiriWave.swift */; };
 		B211A503232D860E00485C1B /* SiriWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B211A502232D860E00485C1B /* SiriWaveView.swift */; };
 		B211A505232D898300485C1B /* SupportLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B211A504232D898200485C1B /* SupportLine.swift */; };
+		B211A507232DCD2100485C1B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B211A506232DCD2100485C1B /* README.md */; };
+		B211A509232DCD3400485C1B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B211A508232DCD3400485C1B /* LICENSE */; };
 		B253B18F232C45C000DE1A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253B18E232C45C000DE1A7C /* AppDelegate.swift */; };
 		B253B191232C45C000DE1A7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253B190232C45C000DE1A7C /* SceneDelegate.swift */; };
 		B253B193232C45C000DE1A7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253B192232C45C000DE1A7C /* ContentView.swift */; };
 		B253B195232C45C100DE1A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253B194232C45C100DE1A7C /* Assets.xcassets */; };
 		B253B198232C45C100DE1A7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B253B197232C45C100DE1A7C /* Preview Assets.xcassets */; };
 		B253B19B232C45C100DE1A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B253B199232C45C100DE1A7C /* LaunchScreen.storyboard */; };
-		B253B1A6232C45C100DE1A7C /* SwiftUI_SiriWaveViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253B1A5232C45C100DE1A7C /* SwiftUI_SiriWaveViewTests.swift */; };
-		B253B1B1232C45C100DE1A7C /* SwiftUI_SiriWaveViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253B1B0232C45C100DE1A7C /* SwiftUI_SiriWaveViewUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B253B1A2232C45C100DE1A7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B253B183232C45C000DE1A7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B253B18A232C45C000DE1A7C;
-			remoteInfo = "SwiftUI-SiriWaveView";
-		};
-		B253B1AD232C45C100DE1A7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B253B183232C45C000DE1A7C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B253B18A232C45C000DE1A7C;
-			remoteInfo = "SwiftUI-SiriWaveView";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B211A4FD232D7E6900485C1B /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		B211A500232D7F2D00485C1B /* SiriWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriWave.swift; sourceTree = "<group>"; };
 		B211A502232D860E00485C1B /* SiriWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriWaveView.swift; sourceTree = "<group>"; };
 		B211A504232D898200485C1B /* SupportLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportLine.swift; sourceTree = "<group>"; };
+		B211A506232DCD2100485C1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B211A508232DCD3400485C1B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B253B18B232C45C000DE1A7C /* SwiftUI-SiriWaveView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-SiriWaveView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B253B18E232C45C000DE1A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B253B190232C45C000DE1A7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,30 +36,10 @@
 		B253B197232C45C100DE1A7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B253B19A232C45C100DE1A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B253B19C232C45C100DE1A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B253B1A1232C45C100DE1A7C /* SwiftUI-SiriWaveViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-SiriWaveViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B253B1A5232C45C100DE1A7C /* SwiftUI_SiriWaveViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SiriWaveViewTests.swift; sourceTree = "<group>"; };
-		B253B1A7232C45C100DE1A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B253B1AC232C45C100DE1A7C /* SwiftUI-SiriWaveViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-SiriWaveViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B253B1B0232C45C100DE1A7C /* SwiftUI_SiriWaveViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SiriWaveViewUITests.swift; sourceTree = "<group>"; };
-		B253B1B2232C45C100DE1A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B253B188232C45C000DE1A7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253B19E232C45C100DE1A7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253B1A9232C45C100DE1A7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -114,10 +79,10 @@
 		B253B182232C45C000DE1A7C = {
 			isa = PBXGroup;
 			children = (
+				B211A506232DCD2100485C1B /* README.md */,
 				B253B18D232C45C000DE1A7C /* SwiftUI-SiriWaveView */,
-				B253B1A4232C45C100DE1A7C /* SwiftUI-SiriWaveViewTests */,
-				B253B1AF232C45C100DE1A7C /* SwiftUI-SiriWaveViewUITests */,
 				B253B18C232C45C000DE1A7C /* Products */,
+				B211A508232DCD3400485C1B /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				B253B18B232C45C000DE1A7C /* SwiftUI-SiriWaveView.app */,
-				B253B1A1232C45C100DE1A7C /* SwiftUI-SiriWaveViewTests.xctest */,
-				B253B1AC232C45C100DE1A7C /* SwiftUI-SiriWaveViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,24 +117,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B253B1A4232C45C100DE1A7C /* SwiftUI-SiriWaveViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				B253B1A5232C45C100DE1A7C /* SwiftUI_SiriWaveViewTests.swift */,
-				B253B1A7232C45C100DE1A7C /* Info.plist */,
-			);
-			path = "SwiftUI-SiriWaveViewTests";
-			sourceTree = "<group>";
-		};
-		B253B1AF232C45C100DE1A7C /* SwiftUI-SiriWaveViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B253B1B0232C45C100DE1A7C /* SwiftUI_SiriWaveViewUITests.swift */,
-				B253B1B2232C45C100DE1A7C /* Info.plist */,
-			);
-			path = "SwiftUI-SiriWaveViewUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,42 +137,6 @@
 			productReference = B253B18B232C45C000DE1A7C /* SwiftUI-SiriWaveView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B253B1A0232C45C100DE1A7C /* SwiftUI-SiriWaveViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B253B1B8232C45C100DE1A7C /* Build configuration list for PBXNativeTarget "SwiftUI-SiriWaveViewTests" */;
-			buildPhases = (
-				B253B19D232C45C100DE1A7C /* Sources */,
-				B253B19E232C45C100DE1A7C /* Frameworks */,
-				B253B19F232C45C100DE1A7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B253B1A3232C45C100DE1A7C /* PBXTargetDependency */,
-			);
-			name = "SwiftUI-SiriWaveViewTests";
-			productName = "SwiftUI-SiriWaveViewTests";
-			productReference = B253B1A1232C45C100DE1A7C /* SwiftUI-SiriWaveViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B253B1AB232C45C100DE1A7C /* SwiftUI-SiriWaveViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B253B1BB232C45C100DE1A7C /* Build configuration list for PBXNativeTarget "SwiftUI-SiriWaveViewUITests" */;
-			buildPhases = (
-				B253B1A8232C45C100DE1A7C /* Sources */,
-				B253B1A9232C45C100DE1A7C /* Frameworks */,
-				B253B1AA232C45C100DE1A7C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B253B1AE232C45C100DE1A7C /* PBXTargetDependency */,
-			);
-			name = "SwiftUI-SiriWaveViewUITests";
-			productName = "SwiftUI-SiriWaveViewUITests";
-			productReference = B253B1AC232C45C100DE1A7C /* SwiftUI-SiriWaveViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,14 +149,6 @@
 				TargetAttributes = {
 					B253B18A232C45C000DE1A7C = {
 						CreatedOnToolsVersion = 11.0;
-					};
-					B253B1A0232C45C100DE1A7C = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = B253B18A232C45C000DE1A7C;
-					};
-					B253B1AB232C45C100DE1A7C = {
-						CreatedOnToolsVersion = 11.0;
-						TestTargetID = B253B18A232C45C000DE1A7C;
 					};
 				};
 			};
@@ -265,8 +166,6 @@
 			projectRoot = "";
 			targets = (
 				B253B18A232C45C000DE1A7C /* SwiftUI-SiriWaveView */,
-				B253B1A0232C45C100DE1A7C /* SwiftUI-SiriWaveViewTests */,
-				B253B1AB232C45C100DE1A7C /* SwiftUI-SiriWaveViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,21 +177,9 @@
 			files = (
 				B253B19B232C45C100DE1A7C /* LaunchScreen.storyboard in Resources */,
 				B253B198232C45C100DE1A7C /* Preview Assets.xcassets in Resources */,
+				B211A507232DCD2100485C1B /* README.md in Resources */,
 				B253B195232C45C100DE1A7C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253B19F232C45C100DE1A7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253B1AA232C45C100DE1A7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B211A509232DCD3400485C1B /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,36 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B253B19D232C45C100DE1A7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B253B1A6232C45C100DE1A7C /* SwiftUI_SiriWaveViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B253B1A8232C45C100DE1A7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B253B1B1232C45C100DE1A7C /* SwiftUI_SiriWaveViewUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B253B1A3232C45C100DE1A7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B253B18A232C45C000DE1A7C /* SwiftUI-SiriWaveView */;
-			targetProxy = B253B1A2232C45C100DE1A7C /* PBXContainerItemProxy */;
-		};
-		B253B1AE232C45C100DE1A7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B253B18A232C45C000DE1A7C /* SwiftUI-SiriWaveView */;
-			targetProxy = B253B1AD232C45C100DE1A7C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B253B199232C45C100DE1A7C /* LaunchScreen.storyboard */ = {
@@ -510,90 +368,6 @@
 			};
 			name = Release;
 		};
-		B253B1B9232C45C100DE1A7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YDYFK9U9R9;
-				INFOPLIST_FILE = "SwiftUI-SiriWaveViewTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noahchalifour.SwiftUI-SiriWaveViewTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-SiriWaveView.app/SwiftUI-SiriWaveView";
-			};
-			name = Debug;
-		};
-		B253B1BA232C45C100DE1A7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YDYFK9U9R9;
-				INFOPLIST_FILE = "SwiftUI-SiriWaveViewTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noahchalifour.SwiftUI-SiriWaveViewTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-SiriWaveView.app/SwiftUI-SiriWaveView";
-			};
-			name = Release;
-		};
-		B253B1BC232C45C100DE1A7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YDYFK9U9R9;
-				INFOPLIST_FILE = "SwiftUI-SiriWaveViewUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noahchalifour.SwiftUI-SiriWaveViewUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SwiftUI-SiriWaveView";
-			};
-			name = Debug;
-		};
-		B253B1BD232C45C100DE1A7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YDYFK9U9R9;
-				INFOPLIST_FILE = "SwiftUI-SiriWaveViewUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noahchalifour.SwiftUI-SiriWaveViewUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SwiftUI-SiriWaveView";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,24 +385,6 @@
 			buildConfigurations = (
 				B253B1B6232C45C100DE1A7C /* Debug */,
 				B253B1B7232C45C100DE1A7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B253B1B8232C45C100DE1A7C /* Build configuration list for PBXNativeTarget "SwiftUI-SiriWaveViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B253B1B9232C45C100DE1A7C /* Debug */,
-				B253B1BA232C45C100DE1A7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B253B1BB232C45C100DE1A7C /* Build configuration list for PBXNativeTarget "SwiftUI-SiriWaveViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B253B1BC232C45C100DE1A7C /* Debug */,
-				B253B1BD232C45C100DE1A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

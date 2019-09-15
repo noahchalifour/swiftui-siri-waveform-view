@@ -15,7 +15,7 @@ struct ContentView: View {
 
     func randomize() {
 
-        randomizeTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { _ in
+        randomizeTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true, block: { _ in
 
             let randomPower = Double.random(in: 0 ... 1.0)
             self.power = randomPower
@@ -34,7 +34,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             SiriWaveView(power: power)
-                .frame(height: 100, alignment: .leading)
+                .frame(height: 60, alignment: .leading)
                 .background(Color(red: (28 / 255), green: (44 / 255), blue: (61 / 255)))
             Button(action: randomizeTimer == nil ? randomize : stop, label: {
                 Text(randomizeTimer == nil ? "Randomize!" : "Stop")

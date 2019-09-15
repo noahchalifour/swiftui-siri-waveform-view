@@ -46,8 +46,9 @@ struct SiriWaveView: View {
                 SupportLine(color: self.supportLineColor)
                 ForEach(0..<self.colors.count, id: \.self) { i in
                     WaveView(wave: self.siriWave.waves[i], color: self.colors[i])
-//                        .scaleEffect(CGFloat(self.power))
-                        .animation(.spring())
+//                        .animation(.spring())
+                        .animation(.linear(duration: 0.3))
+                        .shadow(color: self.colors[i], radius: 2, x: 0, y: 0)
                 }
                 
             }
