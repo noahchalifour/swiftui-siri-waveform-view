@@ -28,7 +28,7 @@ struct SiriWaveView: View {
            // Green
            Color(red: (48 / 255), green: (220 / 255), blue: (155 / 255)),
            // Blue
-           Color(red: (15 / 255), green: (82 / 255), blue: (169 / 255))
+           Color(red: (25 / 255), green: (122 / 255), blue: (255 / 255))
         ]
         
         self.supportLineColor = Color(.white)
@@ -48,7 +48,7 @@ struct SiriWaveView: View {
                     WaveView(wave: self.siriWave.waves[i], color: self.colors[i])
 //                        .animation(.spring())
                         .animation(.linear(duration: 0.3))
-                        .shadow(color: self.colors[i], radius: 2, x: 0, y: 0)
+//                        .shadow(color: self.colors[i], radius: 2, x: 0, y: 0)
                 }
                 
             }
@@ -63,6 +63,6 @@ struct SiriWaveView: View {
 
 struct SiriWaveView_Previews: PreviewProvider {
     static var previews: some View {
-        SiriWaveView(power: 0.0)
+        SiriWaveView(power: 1.0)
     }
 }
