@@ -11,18 +11,18 @@ import SwiftUI
 struct SiriWaveView: View {
     
     var siriWave: SiriWave!
-    var colors: [Color]!
-    var supportLineColor: Color!
     
-    var power: Double!
+    var _colors: [Color]!
+    var _supportLineColor: Color!
+    var _power: Double!
     
-    init(power: Double) {
+    init() {
         
-        self.power = power
-        
+        self._power = 0.0
+    
         // Initialize default Siri waveform
         
-        self.colors = [
+        self._colors = [
            // Red
            Color(red: (173 / 255), green: (57 / 255), blue: (76 / 255)),
            // Green
@@ -31,10 +31,44 @@ struct SiriWaveView: View {
            Color(red: (25 / 255), green: (122 / 255), blue: (255 / 255))
         ]
         
-        self.supportLineColor = Color(.white)
+        self._supportLineColor = Color(.white)
         
         // Initialize model
-        self.siriWave = SiriWave(numWaves: self.colors.count, power: power)
+        self.siriWave = SiriWave(numWaves: self._colors.count, power: self._power)
+        
+    }
+    
+    func colors(colors: [Color]) -> Self {
+        
+        var this = self;
+        
+        if (colors.count != this._colors.count) {
+            this.siriWave = SiriWave(numWaves: colors.count, power: this._power)
+        }
+        
+        this._colors = colors
+        
+        return this
+        
+    }
+    
+    func power(power: Double) -> Self {
+        
+        var this = self;
+        
+        this.siriWave = SiriWave(numWaves: self._colors.count, power: power)
+        
+        return this
+        
+    }
+    
+    func supportLineColor(color: Color) -> Self {
+        
+        var this = self;
+        
+        this._supportLineColor = color
+        
+        return this
         
     }
     
@@ -43,9 +77,9 @@ struct SiriWaveView: View {
         GeometryReader { geometry in
             
             ZStack {
-                SupportLine(color: self.supportLineColor)
-                ForEach(0..<self.colors.count, id: \.self) { i in
-                    WaveView(wave: self.siriWave.waves[i], color: self.colors[i])
+                SupportLine(color: self._supportLineColor)
+                ForEach(0..<self._colors.count, id: \.self) { i in
+                    WaveView(wave: self.siriWave.waves[i], color: self._colors[i])
 //                        .animation(.spring())
                         .animation(.linear(duration: 0.3))
 //                        .shadow(color: self.colors[i], radius: 2, x: 0, y: 0)
@@ -63,6 +97,6 @@ struct SiriWaveView: View {
 
 struct SiriWaveView_Previews: PreviewProvider {
     static var previews: some View {
-        SiriWaveView(power: 1.0)
+        SiriWaveView()
     }
 }
