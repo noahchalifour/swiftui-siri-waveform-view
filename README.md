@@ -10,7 +10,7 @@ This is a very simple implementation of the Siri waveform in iOS9+ made with Swi
 
 ## Installation
 
-To install, simply drag and drop the `SwiftUI-SiriWaveView/SiriWaveView` folder into your project (NOTE: Make sure you add it to the proper target(s) in XCode)
+To install, simply drag and drop the `SwiftUI-SiriWaveView/SiriWaveView` folder into your project (NOTE: Make sure you select `Create groups` when adding the folder to your project).
 
 ## Usage
 
